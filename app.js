@@ -15,6 +15,8 @@ const init = async () => {
 }
 init();
 
+app.use('/wiki', require('./routes/wiki'))
+app.use('/user', require('./routes/user'))
 
 //   User.sync()
 //   Page.sync()
